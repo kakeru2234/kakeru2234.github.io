@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>周邊商品</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="./products.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
         integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
@@ -18,15 +19,40 @@
             <div class="container ">
                 <a class="navbar-brand" href="./index.html"></a>
                 <div class="imgBox">
-                    <div class="bg-img" style="background-image: url('/img/pic2/ABOUT.png');" onclick="location.href='./about.html';"></div>
-                    <div class="bg-img" style="background-image: url('/img/pic2/ALBUM.png');"onclick="location.href='./album.html';"></div>
-                    <div class="bg-img" style="background-image: url('/img/pic2/EVENTS.png');"onclick="location.href='./event.html';"></div>
-                    <div class="bg-img" style="background-image: url('/img/pic2/PRODUCTS.png');"onclick="location.href='./products.html';"></div>
-                    
+                    <div class="bg-img" style="background-image: url('/img/pic2/ABOUT.png');"
+                        onclick="location.href='./about.html';"></div>
+                    <div class="bg-img" style="background-image: url('/img/pic2/ALBUM.png');"
+                        onclick="location.href='./album.html';"></div>
+                    <div class="bg-img" style="background-image: url('/img/pic2/EVENTS.png');"
+                        onclick="location.href='./event.html';"></div>
+                    <div class="bg-img" style="background-image: url('/img/pic2/PRODUCTS.png');"
+                        onclick="location.href='./products.html';"></div>
+
                 </div>
             </div>
         </nav>
-        <div class="pic"></div>
+        <div class="box"></div>
+
+        <div class="container-fluid">
+
+            <div class="first_product_box"></div>
+            <div class="product_box box1">
+                <div class="swiper-wrapper">
+                    <div class="layer1_pic" style="background-image: url('./Products_pic/layer2_1.png');"></div>
+                    <div class="layer1_pic" style="background-image: url('./Products_pic/layer2_2.png');"></div>
+                    <div class="layer1_pic" style="background-image: url('./Products_pic/layer2_1.png');"></div>
+                    <!-- <img src="./Products_pic/layer2_1.png" alt=""> -->
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+            <div class="product_box box2"></div>
+            <div class="product_box box3"></div>
+            <div class="product_box box4"></div>
+            <div class="product_box box5"></div>
+            <div class="product_box box6"></div>
+
+        </div>
+
         <div class="footer">
             Copyright © 玖壹壹
         </div>
@@ -43,10 +69,24 @@
         crossorigin="anonymous"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
     <script>
-        var scene = document.getElementById('scene');
-        var parallaxInstance = new Parallax(scene);
+        var swiper = new Swiper('.box1', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            // navigation: {
+            //     nextEl: '.swiper-button-next',
+            //     prevEl: '.swiper-button-prev',
+            // },
+        });
     </script>
+
+
 </body>
 
 </html>

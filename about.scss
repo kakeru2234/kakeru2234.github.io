@@ -72,12 +72,22 @@ body {
         .bg-img {
           height: 100%;
           width: 25%;
+          transition: 0.5s;
 
           // background-color: honeydew;
           background-size: cover;
           background-repeat: no-repeat;
           background-position: center;
         }
+
+        .bg-img:hover {
+          border-bottom: solid plum 10px;
+          // transition:width 1s ease-out,
+          // transition:
+          //    border-color 0s ease-out 0.5s, // Wait for ::before to finish before showing border
+          // width 0.25s ease-out 0.5s,
+        }
+
       }
     }
     .box {
@@ -160,7 +170,7 @@ body {
       width: 100%;
       padding: 3px;
       color: azure;
-      background-color: gray;
+      background-color: #0c0a35;
       text-align: center;
       bottom: 0%;
     }

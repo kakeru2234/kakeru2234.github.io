@@ -48,19 +48,24 @@ body .container-fluid .navbar .container .imgBox {
 
 body .container-fluid .navbar .container .bg-img {
   height: 100%;
-  width: 17%;
-  background-color: honeydew;
-  background-size: contain;
+  width: 25%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+body .container-fluid .navbar .container .bg-img:hover {
+  border-bottom: solid plum 10px;
 }
 
 body .container-fluid .footer {
   position: fixed;
   width: 100%;
-  padding: 30px;
+  padding: 3px;
   color: azure;
-  background-color: gray;
+  background-color: #0c0a35;
   text-align: center;
   bottom: 0%;
 }

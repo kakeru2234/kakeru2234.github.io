@@ -19,8 +19,13 @@ body .container-fluid .navbar {
 }
 
 body .container-fluid .navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 100px;
   padding-top: 40px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 body .container-fluid .navbar .container .navbar-brand {
@@ -39,6 +44,12 @@ body .container-fluid .navbar .container .navbar-brand {
   background-position: center;
 }
 
+@media screen and (max-width: 768px) {
+  body .container-fluid .navbar .container .navbar-brand {
+    display: none;
+  }
+}
+
 body .container-fluid .navbar .container .imgBox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -49,6 +60,12 @@ body .container-fluid .navbar .container .imgBox {
   margin: 20px;
   width: 100%;
   height: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  body .container-fluid .navbar .container .imgBox {
+    display: none;
+  }
 }
 
 body .container-fluid .navbar .container .bg-img {
@@ -72,68 +89,38 @@ body .container-fluid .container-fluid {
   height: 100%;
 }
 
-body .container-fluid .container-fluid #scene4 {
+body .container-fluid .container-fluid .scene {
   width: 50%;
   height: 50%;
   position: absolute;
+}
+
+body .container-fluid .container-fluid .scene .bg-img {
+  width: 500px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body .container-fluid .container-fluid #scene4 {
   bottom: 5%;
   left: 12%;
 }
 
-body .container-fluid .container-fluid #scene4 .bg-img {
-  width: 500px;
-  height: 500px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 body .container-fluid .container-fluid #scene5 {
-  width: 50%;
-  height: 50%;
-  position: absolute;
   bottom: 30%;
   left: 12%;
 }
 
-body .container-fluid .container-fluid #scene5 .bg-img {
-  width: 500px;
-  height: 500px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 body .container-fluid .container-fluid #scene6 {
-  width: 50%;
-  height: 50%;
-  position: absolute;
   bottom: 35%;
   left: 50%;
 }
 
-body .container-fluid .container-fluid #scene6 .bg-img {
-  width: 500px;
-  height: 500px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 body .container-fluid .container-fluid #scene7 {
-  width: 50%;
-  height: 50%;
-  position: absolute;
   bottom: 10%;
   left: 60%;
-}
-
-body .container-fluid .container-fluid #scene7 .bg-img {
-  width: 500px;
-  height: 500px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 body .container-fluid .container-fluid .row {
@@ -144,7 +131,7 @@ body .container-fluid .container-fluid .row .col {
   height: 100%;
 }
 
-body .container-fluid .container-fluid .row .col .scene {
+body .container-fluid .container-fluid .row .col .scene_head {
   height: 100%;
   -webkit-animation-name: jump;
           animation-name: jump;
@@ -154,7 +141,7 @@ body .container-fluid .container-fluid .row .col .scene {
           animation-iteration-count: infinite;
 }
 
-body .container-fluid .container-fluid .row .col .scene .bg-img {
+body .container-fluid .container-fluid .row .col .scene_head .bg-img {
   width: 100%;
   height: 100%;
   background-size: contain;
@@ -187,7 +174,7 @@ body .container-fluid .footer {
   width: 100%;
   padding: 3px 0;
   color: azure;
-  background-color: gray;
+  background-color: #0c0a35;
   text-align: center;
   bottom: 0%;
 }

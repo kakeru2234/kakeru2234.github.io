@@ -1,6 +1,7 @@
 body {
   height: 100vh;
   margin: 0;
+
   .container-fluid {
     width: 100%;
     height: 100%;
@@ -8,12 +9,17 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+
     .navbar {
       width: 100%;
       background-image: url("./img/pic2/NAV.png");
+
       .container {
+        display: flex;
         height: 100px;
         padding-top: 40px;
+        flex-wrap: nowrap;
+
         .navbar-brand {
           padding-top: 100px;
           height: 180px;
@@ -25,15 +31,22 @@ body {
           background-repeat: no-repeat;
           background-size: cover;
           background-position: center;
+          @media screen and (max-width: 768px) {
+            display: none;
+          }
         }
+
         .imgBox {
           display: flex;
           justify-content: space-between;
           margin: 20px;
           width: 100%;
           height: 100%;
-
+          @media screen and (max-width: 768px) {
+            display: none;
+          }
         }
+
         .bg-img {
           height: 100%;
           width: 25%;
@@ -42,12 +55,9 @@ body {
           background-repeat: no-repeat;
           background-position: center;
         }
+
         .bg-img:hover {
           border-bottom: solid plum 10px;
-          // transition:width 1s ease-out,
-          // transition:
-          //    border-color 0s ease-out 0.5s, // Wait for ::before to finish before showing border
-          // width 0.25s ease-out 0.5s,
         }
       }
     }
@@ -56,68 +66,42 @@ body {
       position: relative;
       padding-top: 10%;
       height: 100%;
-      #scene4 {
+      .scene {
         width: 50%;
         height: 50%;
         position: absolute;
+        // bottom: 5%;
+        // left: 12%;
+        .bg-img {
+          width: 500px;
+          height: 500px;
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+      }
+      #scene4 {
         bottom: 5%;
         left: 12%;
-        .bg-img {
-          width: 500px;
-          height: 500px;
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: center;
-        }
       }
       #scene5 {
-        width: 50%;
-        height: 50%;
-        position: absolute;
         bottom: 30%;
         left: 12%;
-        .bg-img {
-          width: 500px;
-          height: 500px;
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: center;
-        }
       }
       #scene6 {
-        width: 50%;
-        height: 50%;
-        position: absolute;
         bottom: 35%;
         left: 50%;
-        .bg-img {
-          width: 500px;
-          height: 500px;
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: center;
-        }
       }
       #scene7 {
-        width: 50%;
-        height: 50%;
-        position: absolute;
         bottom: 10%;
         left: 60%;
-        .bg-img {
-          width: 500px;
-          height: 500px;
-          background-size: contain;
-          background-repeat: no-repeat;
-          background-position: center;
-        }
       }
 
       .row {
         height: 75%;
         .col {
           height: 100%;
-          .scene {
+          .scene_head {
             height: 100%;
             animation-name: jump;
             animation-duration: 2.2s;
@@ -156,12 +140,13 @@ body {
       width: 100%;
       padding: 3px 0;
       color: azure;
-      background-color: gray;
+      background-color: #0c0a35;
       text-align: center;
       bottom: 0%;
     }
   }
 }
+
 @keyframes example {
   0% {
     background-image: url("./img/pic2/all.png");
@@ -176,22 +161,21 @@ body {
     background-image: url("./img/pic2/all.png");
   }
 }
-@keyframes jump{
-  0%{
-    top:20px;
+@keyframes jump {
+  0% {
+    top: 20px;
   }
-  20%{
-    border-radius:2px;  /*從 20% 的地方才開始變形*/
+  20% {
+    border-radius: 2px; /*從 20% 的地方才開始變形*/
   }
-  50%{
-    top:50px; 
+  50% {
+    top: 50px;
     /* border-bottom-right-radius:25px; */
   }
-  80%{
-    border-radius:2px;  /*到 80% 的地方恢復原狀*/
+  80% {
+    border-radius: 2px; /*到 80% 的地方恢復原狀*/
   }
-  100%{
-    top:20px;
+  100% {
+    top: 20px;
   }
 }
-
