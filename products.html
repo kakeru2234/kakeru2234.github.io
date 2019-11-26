@@ -38,16 +38,34 @@
             <div class="first_product_box"></div>
             <div class="product_box box1">
                 <div class="swiper-wrapper">
-                    <div class="layer1_pic" style="background-image: url('./Products_pic/layer2_1.png');"></div>
-                    <div class="layer1_pic" style="background-image: url('./Products_pic/layer2_2.png');"></div>
-                    <div class="layer1_pic" style="background-image: url('./Products_pic/layer2_1.png');"></div>
+                    <div class="swiper-slide" style="background-image: url('./Products_pic/layer2_1.png');"></div>
+                    <div class="swiper-slide" style="background-image: url('./Products_pic/layer2_2.png');"></div>
+                    <!-- <div class="swiper-slide" style="background-image: url('./Products_pic/layer2_1.png');"></div> -->
                     <!-- <img src="./Products_pic/layer2_1.png" alt=""> -->
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
-            <div class="product_box box2"></div>
-            <div class="product_box box3"></div>
-            <div class="product_box box4"></div>
+            <div class="row product_box box2">
+                <div class="layer2_l col-4"></div>
+                <div class="layer2_r col-8">
+                    <div class="layer2_r_item"></div>
+                    <div class="layer2_r_item"></div>
+                    <div class="layer2_r_item"></div>
+                    <div class="layer2_r_item"></div>
+                </div>
+            </div>
+
+            <div class="row product_box box3">
+                <div class="layer3_cont">
+                    <div class="layer3 col-6"></div>
+                    <div class="layer3 col-6"></div>
+                </div>
+                <div class="layer3_backRect"></div>
+            </div>
+
+            <div class="product_box box4">
+
+            </div>
             <div class="product_box box5"></div>
             <div class="product_box box6"></div>
 
@@ -79,10 +97,6 @@
                 el: '.swiper-pagination',
                 clickable: true,
             },
-            // navigation: {
-            //     nextEl: '.swiper-button-next',
-            //     prevEl: '.swiper-button-prev',
-            // },
         });
     </script>
 

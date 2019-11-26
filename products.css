@@ -15,8 +15,13 @@ body .container-fluid .navbar {
 }
 
 body .container-fluid .navbar .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   height: 100px;
   padding-top: 40px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
 body .container-fluid .navbar .container .navbar-brand {
@@ -87,10 +92,17 @@ body .container-fluid .container-fluid .first_product_box {
 body .container-fluid .container-fluid .product_box {
   width: 100%;
   height: 100vh;
+  margin: 20px 0 0 0;
+  border: black 1px solid;
 }
 
-body .container-fluid .container-fluid .box1 .swiper-wrapper .layer1_pic {
+body .container-fluid .container-fluid .box1 {
+  overflow: hidden;
   width: 100%;
+  height: 100%;
+}
+
+body .container-fluid .container-fluid .box1 .swiper-wrapper .swiper-slide {
   height: 90%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -99,6 +111,54 @@ body .container-fluid .container-fluid .box1 .swiper-wrapper .layer1_pic {
 
 body .container-fluid .container-fluid .box1 .swiper-wrapper .swiper-pagination {
   height: 10%;
+}
+
+body .container-fluid .container-fluid .box2 .layer2_l {
+  border: #ee0a35 1px solid;
+  height: 100%;
+}
+
+body .container-fluid .container-fluid .box2 .layer2_r {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: 100%;
+}
+
+body .container-fluid .container-fluid .box2 .layer2_r .layer2_r_item {
+  border: #ee0a35 1px solid;
+  width: 50%;
+  height: 50%;
+  padding: 15px;
+}
+
+body .container-fluid .container-fluid .box2 .box3 {
+  position: relative;
+}
+
+body .container-fluid .container-fluid .box2 .box3 .layer3_cont {
+  height: 100%;
+  width: 100%;
+}
+
+body .container-fluid .container-fluid .box2 .box3 .layer3_cont .layer3 {
+  border: #ee0a35 1px solid;
+  height: 100%;
+}
+
+body .container-fluid .container-fluid .box2 .box3 .layer3_backRect {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  background-color: salmon;
+  -webkit-transform: translateX(50%);
+          transform: translateX(50%);
+  -webkit-transform: translateY(50%);
+          transform: translateY(50%);
+  top: -50%;
+  right: -50%;
 }
 
 body .container-fluid .footer {
