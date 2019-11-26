@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+}
+
+body .container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url("./img/pic2/BG.png");
+}
+
+body .container-fluid .navbar {
+  background-image: url("./img/pic2/NAV.png");
+}
+
+body .container-fluid .navbar .container {
+  height: 100px;
+  padding-top: 40px;
+}
+
+body .container-fluid .navbar .container .navbar-brand {
+  height: 140px;
+  width: 120px;
+  background-image: url("./img/pic2/all.png");
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 0.3s;
+          animation-duration: 0.3s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+body .container-fluid .navbar .container .imgBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+body .container-fluid .navbar .container .bg-img {
+  height: 100%;
+  width: 17%;
+  background-color: honeydew;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body .container-fluid .footer {
+  position: fixed;
+  width: 100%;
+  padding: 30px;
+  color: azure;
+  background-color: gray;
+  text-align: center;
+  bottom: 0%;
+}
+
+@-webkit-keyframes example {
+  0% {
+    background-image: url("./img/pic2/all.png");
+  }
+  33% {
+    background-image: url("./img/pic2/nb.png");
+  }
+  66% {
+    background-image: url("./img/pic2/nw.png");
+  }
+  100% {
+    background-image: url("./img/pic2/nw.png");
+  }
+}
+
+@keyframes example {
+  0% {
+    background-image: url("./img/pic2/all.png");
+  }
+  33% {
+    background-image: url("./img/pic2/nb.png");
+  }
+  66% {
+    background-image: url("./img/pic2/nw.png");
+  }
+  100% {
+    background-image: url("./img/pic2/nw.png");
+  }
+}
+/*# sourceMappingURL=event.css.map */

@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    .container-fluid {
+      padding-right: 0;
+      padding-left: 0;
+      // padding-top: 40px;
+      width: 100%;
+      height: 100vh;
+      // background-color: #BBAA99;
+      background-image: url("./img/pic2/BG.png");
+  
+      .navbar {
+        // height: 100px;
+        background-image: url("./img/pic2/NAV.png");
+        .container {
+          height: 100px;
+          padding-top: 40px;
+          // position: relative;
+          .navbar-brand {
+            // position: absolute;
+            
+            // padding-top: 100px;
+            height: 140px;
+            width: 120px;
+            background-image: url("./img/pic2/all.png");
+            // background-image: url("./img/pic2/nb.png");
+            animation-name: example;
+            animation-duration: 0.3s;
+            animation-iteration-count: infinite;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+          }
+          .imgBox {
+            display: flex;
+            justify-content: space-between;
+            margin: 20px;
+            // background-color: green;
+            width: 100%;
+            height: 100%;
+            // z-index: 1111;
+          }
+          .bg-img {
+            height: 100%;
+            width: 25%;
+            
+            // background-color: honeydew;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+          }
+        }
+      }
+  
+      
+  
+      .footer {
+        position: fixed;
+        width: 100%;
+        padding: 30px;
+        color: azure;
+        background-color: gray;
+        text-align: center;
+        bottom: 0%;
+      }
+    }
+  }
+  @keyframes example {
+    0% {
+      background-image: url("./img/pic2/all.png");
+    }
+    33% {
+      background-image: url("./img/pic2/nb.png");
+    }
+    66% {
+      background-image: url("./img/pic2/nw.png");
+    }
+    100% {
+      background-image: url("./img/pic2/nw.png");
+    }
+  
+    }
+    
+    // 100% {
+    //     background-image: url('./img/pic2/all.png');
+    // }
+  // }
+  

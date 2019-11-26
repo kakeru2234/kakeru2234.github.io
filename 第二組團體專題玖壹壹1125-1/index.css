@@ -1,0 +1,266 @@
+@charset "UTF-8";
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+body .container-fluid {
+  width: 100%;
+  height: 100%;
+  background-image: url("./img/pic2/BG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+body .container-fluid .navbar {
+  width: 100%;
+  background-image: url("./img/pic2/NAV.png");
+}
+
+body .container-fluid .navbar .container {
+  height: 100px;
+  padding-top: 40px;
+}
+
+body .container-fluid .navbar .container .navbar-brand {
+  padding-top: 100px;
+  height: 180px;
+  width: 160px;
+  background-image: url("./img/pic2/all.png");
+  -webkit-animation-name: example;
+          animation-name: example;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+body .container-fluid .navbar .container .imgBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 20px;
+  width: 100%;
+  height: 100%;
+}
+
+body .container-fluid .navbar .container .bg-img {
+  height: 100%;
+  width: 25%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body .container-fluid .navbar .container .bg-img:hover {
+  border-bottom: solid plum 10px;
+}
+
+body .container-fluid .container-fluid {
+  overflow: hidden;
+  position: relative;
+  padding-top: 10%;
+  height: 100%;
+}
+
+body .container-fluid .container-fluid #scene4 {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  bottom: 5%;
+  left: 12%;
+}
+
+body .container-fluid .container-fluid #scene4 .bg-img {
+  width: 500px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body .container-fluid .container-fluid #scene5 {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  bottom: 30%;
+  left: 12%;
+}
+
+body .container-fluid .container-fluid #scene5 .bg-img {
+  width: 500px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body .container-fluid .container-fluid #scene6 {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  bottom: 35%;
+  left: 50%;
+}
+
+body .container-fluid .container-fluid #scene6 .bg-img {
+  width: 500px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body .container-fluid .container-fluid #scene7 {
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  bottom: 10%;
+  left: 60%;
+}
+
+body .container-fluid .container-fluid #scene7 .bg-img {
+  width: 500px;
+  height: 500px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body .container-fluid .container-fluid .row {
+  height: 75%;
+}
+
+body .container-fluid .container-fluid .row .col {
+  height: 100%;
+}
+
+body .container-fluid .container-fluid .row .col .scene {
+  height: 100%;
+  -webkit-animation-name: jump;
+          animation-name: jump;
+  -webkit-animation-duration: 2.2s;
+          animation-duration: 2.2s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+body .container-fluid .container-fluid .row .col .scene .bg-img {
+  width: 100%;
+  height: 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body .container-fluid .container-fluid .conn {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  bottom: 10px;
+}
+
+body .container-fluid .container-fluid .conn .conn_btn .bg-img {
+  width: 170px;
+  height: 170px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body .container-fluid .footer {
+  position: fixed;
+  width: 100%;
+  padding: 3px 0;
+  color: azure;
+  background-color: gray;
+  text-align: center;
+  bottom: 0%;
+}
+
+@-webkit-keyframes example {
+  0% {
+    background-image: url("./img/pic2/all.png");
+  }
+  33% {
+    background-image: url("./img/pic2/nb.png");
+  }
+  66% {
+    background-image: url("./img/pic2/nw.png");
+  }
+  100% {
+    background-image: url("./img/pic2/all.png");
+  }
+}
+
+@keyframes example {
+  0% {
+    background-image: url("./img/pic2/all.png");
+  }
+  33% {
+    background-image: url("./img/pic2/nb.png");
+  }
+  66% {
+    background-image: url("./img/pic2/nw.png");
+  }
+  100% {
+    background-image: url("./img/pic2/all.png");
+  }
+}
+
+@-webkit-keyframes jump {
+  0% {
+    top: 20px;
+  }
+  20% {
+    border-radius: 2px;
+    /*從 20% 的地方才開始變形*/
+  }
+  50% {
+    top: 50px;
+    /* border-bottom-right-radius:25px; */
+  }
+  80% {
+    border-radius: 2px;
+    /*到 80% 的地方恢復原狀*/
+  }
+  100% {
+    top: 20px;
+  }
+}
+
+@keyframes jump {
+  0% {
+    top: 20px;
+  }
+  20% {
+    border-radius: 2px;
+    /*從 20% 的地方才開始變形*/
+  }
+  50% {
+    top: 50px;
+    /* border-bottom-right-radius:25px; */
+  }
+  80% {
+    border-radius: 2px;
+    /*到 80% 的地方恢復原狀*/
+  }
+  100% {
+    top: 20px;
+  }
+}
+/*# sourceMappingURL=index.css.map */

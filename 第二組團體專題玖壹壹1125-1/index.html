@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>玖壹壹-首頁</title>
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container ">
+                <a class="navbar-brand" href="./index.html"></a>
+                <div class="imgBox">
+                    <div class="bg-img" style="background-image: url('/img/pic2/ABOUT.png');"
+                        onclick="location.href='./about.html';"></div>
+                    <div class="bg-img" style="background-image: url('/img/pic2/ALBUM.png');"
+                        onclick="location.href='./album.html';"></div>
+                    <div class="bg-img" style="background-image: url('/img/pic2/EVENTS.png');"
+                        onclick="location.href='./event.html';"></div>
+                    <div class="bg-img" style="background-image: url('/img/pic2/PRODUCTS.png');"
+                        onclick="location.href='./products.html';"></div>
+                </div>
+            </div>
+        </nav>
+        <div class="container-fluid">
+           
+            <div id="scene4" class="scene">
+                <div data-depth="1" class="bg-img" style="background-image: url('./obj/rocket.png');"></div>
+            </div>
+            <div id="scene5" class="scene">
+                <div data-depth="1" class="bg-img" style="background-image: url('./obj/star.png');"></div>
+            </div>
+            <div id="scene6" class="scene">
+                <div data-depth="1" class="bg-img" style="background-image: url('./obj/star.png');"></div>
+            </div>
+            <div id="scene7" class="scene">
+                <div data-depth="1" class="bg-img" style="background-image: url('./obj/star.png');"></div>
+            </div>
+
+
+ <div class="row">
+                
+                <div class="col col-lg-4 p-3 col-6 ">
+                    <div id="scene1" class="scene">
+                        <div data-depth="0.4" class="bg-img" style="background-image: url('./obj/peo1.png');"></div>
+                        <div data-depth="0.6" class="bg-img" style="background-image: url('./obj/peo1_line.png');">
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-4 p-3 col-6">
+                    <div id="scene2" class="scene">
+                        <div data-depth="0.4" class="bg-img" style="background-image: url('./obj/peo2.png');"></div>
+                        <div data-depth="0.6" class="bg-img" style="background-image: url('./obj/peo2_line.png');">
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-lg-4 p-3 col-6">
+                    <div id="scene3" class="scene">
+                        <div data-depth="0.4" class="bg-img" style="background-image: url('./obj/peo3.png');"></div>
+                        <div data-depth="0.6" class="bg-img" style="background-image: url('./obj/peo3_line.png');">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            
+
+            <div class="conn">
+                <div id="fb" class="conn_btn">
+                    <div class="bg-img" style="background-image: url('./obj/fb.png');"onclick="location.href='https://www.facebook.com/JiuYiYi/';"></div>
+                </div>
+                <div id="line" class="conn_btn">
+                    <div class="bg-img" style="background-image: url('./obj/line.png');"onclick="location.href='https://line.me/zh-hant/';"></div>
+                </div>
+                <div id="ig" class="conn_btn">
+                    <div class="bg-img" style="background-image: url('./obj/ig.png');"onclick="location.href='https://www.instagram.com/911_eo/?hl=zh-tw';"></div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="footer">
+            Copyright © 玖壹壹
+        </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script>
+        var scene1 = document.getElementById('scene1');
+        var parallaxInstance = new Parallax(scene1);
+        var scene2 = document.getElementById('scene2');
+        var parallaxInstance = new Parallax(scene2);
+        var scene3 = document.getElementById('scene3');
+        var parallaxInstance = new Parallax(scene3);
+        var scene4 = document.getElementById('scene4');
+        var parallaxInstance = new Parallax(scene4);
+        var scene5 = document.getElementById('scene5');
+        var parallaxInstance = new Parallax(scene5);
+        var scene6 = document.getElementById('scene6');
+        var parallaxInstance = new Parallax(scene6);
+        var scene7 = document.getElementById('scene7');
+        var parallaxInstance = new Parallax(scene7);
+    </script>
+</body>
+
+</html>
